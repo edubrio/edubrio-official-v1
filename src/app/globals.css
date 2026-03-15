@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #0b7077;
+  --secondary: #d2e6e4;
+  --test: #c3c3c7;
+}
+
+/* Custom style for selected segmented item */
+.custom-segmented .ant-segmented-item.ant-segmented-item-selected {
+  background-color: #0b7077 !important;
+  color: white;
+}
+
+.custom-segmented .ant-segmented-thumb {
+  background-color: #0b7077 !important;
+  color: white;
+}
+
+/* Targeting the checked checkbox background color */
+.custom-check .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #0b7077 !important; /* Your desired color */
+  border-color: #0b7077 !important; /* Make the border color the same as the background */
+}
+
+/* Targeting the checkmark inside the checkbox when checked */
+.custom-check .ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: white !important; /* Make the checkmark white */
+}
+
+/* Handling focus and active states to ensure the custom color is applied immediately */
+.custom-check .ant-checkbox-inner {
+  transition: none !important; /* Disable the transition effect */
+}
+
+/* Target focus state to prevent default blue outline and apply custom styles */
+.custom-check .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #0b7077 !important; /* Custom border color */
+  box-shadow: none; /* Remove focus outline shadow */
+}
+
+.footer-shape {
+  position: relative;
+  background-color: #d1e8f0; /* Light Blue Color */
+}
+
+/* Hide scrollbar but allow scroll */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Filter icon (next to column name) */
+.ant-table-filter-trigger {
+  color: #0b7077 !important;
+}
+
+/* Dropdown menu selected item background and text */
+.ant-dropdown-menu-item-selected,
+.ant-dropdown-menu-item:hover {
+  color: #0b7077 !important;
+  background-color: rgba(11, 112, 119, 0.1) !important;
+}
+
+/* Checkbox when checked */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
+
+/* Checkbox hover effect */
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #0b7077 !important;
+}
+
+/* "Select all" checkbox border when checked */
+.ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #0b707733 !important;
+  border-color: #0b7077 !important;
+}
+
+/* OK button in filter dropdown */
+.ant-dropdown .ant-btn-primary {
+  background-color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
+
+.ant-dropdown .ant-btn-primary:hover {
+  background-color: #095b62 !important; /* darker shade for hover */
+  border-color: #095b62 !important;
+}
+
+/* Reset link */
+.ant-dropdown .ant-btn-link {
+  color: #0b7077 !important;
+}
+
+.ant-dropdown .ant-btn-link:hover {
+  color: #095b62 !important;
+}
+
+/* Sort icon (active or hover) */
+.ant-table-column-sorter-up.active,
+.ant-table-column-sorter-down.active,
+.ant-table-column-sorter-up:hover,
+.ant-table-column-sorter-down:hover {
+  color: #0b7077 !important;
+}
+/* Checkbox checked background and border */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
+
+/* Checkbox check mark (white tick) color */
+.ant-checkbox-inner::after {
+  border-color: white !important;
+}
+
+/* "Select all items" checkbox fix */
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
+
+/* Highlight background when item is selected (e.g., Karnataka row) */
+.ant-dropdown-menu-item-selected {
+  background-color: rgba(11, 112, 119, 0.1) !important;
+}
+
+/* On hover of selected item */
+.ant-dropdown-menu-item-selected:hover {
+  background-color: rgba(11, 112, 119, 0.15) !important;
+}
+
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
+/* Active page number (current page) */
+.ant-pagination-item-active {
+  border-color: #0b7077 !important;
+}
+
+.ant-pagination-item-active a {
+  color: #0b7077 !important;
+}
+
+/* Hover effect on other page numbers */
+.ant-pagination-item:hover {
+  border-color: #0b7077 !important;
+}
+
+.ant-pagination-item:hover a {
+  color: #0b7077 !important;
+}
+
+/* Next/Prev arrows hover and active */
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link {
+  color: #0b7077 !important;
+  border-color: #0b7077 !important;
+}
